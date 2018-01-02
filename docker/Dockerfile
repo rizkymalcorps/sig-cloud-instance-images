@@ -7,5 +7,5 @@ LABEL name="CentOS Base Image" \
     build-date="2018-01-02"
 
 ADD ffmpeg.tar.xz /bin 
-# Default command
-CMD ["/bin/bash"]
+
+ENTRYPOINT ["/bin/ffmpeg"]
