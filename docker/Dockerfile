@@ -1,10 +1,11 @@
 FROM scratch
-MAINTAINER The CentOS Project <cloud-ops@centos.org>
+MAINTAINER HQM <hakim@detik.com>
 ADD c68-docker.tar.xz /
 LABEL name="CentOS Base Image" \
     vendor="CentOS" \
     license="GPLv2" \
-    build-date="2016-06-02"
+    build-date="2018-01-02"
 
+ADD ffmpeg.tar.xz /bin 
 # Default command
 CMD ["/bin/bash"]
