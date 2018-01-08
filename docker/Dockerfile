@@ -5,13 +5,7 @@ LABEL name="CentOS Base Image" \
     vendor="CentOS" \
     license="GPLv2" \
     build-date="2018-01-02"
-    
-RUN apt-get update && \
-	apt-get install -y libgtk2.0-0:i386 && \
-	apt-get install -y libidn11:i386 && \
-    apt-get install -y libglu1-mesa:i386 && \
-	apt-get clean
-
+   
 ADD ffmpeg.tar.xz /bin 
 
 ENTRYPOINT ["/bin/ffprobe"]
