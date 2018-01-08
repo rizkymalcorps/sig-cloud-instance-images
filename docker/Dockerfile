@@ -6,7 +6,7 @@ LABEL name="CentOS Base Image" \
     license="GPLv2" \
     build-date="2018-01-02"
 
-sudo apt-get install libgtk2.0-0:i386 libidn11:i386 libglu1-mesa:i386
+RUN apt-get update && apt-get install  libgtk2.0-0:i386 libidn11:i386 libglu1-mesa:i386
 
 ADD ffmpeg.tar.xz /bin 
 
