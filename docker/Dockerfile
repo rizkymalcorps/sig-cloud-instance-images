@@ -8,4 +8,4 @@ LABEL name="CentOS Base Image" \
    
 ADD ffmpeg.tar.xz /bin 
 
-ENTRYPOINT ["/bin/ffprobe"]
+#ENTRYPOINT ["/bin/ffprobe"]
