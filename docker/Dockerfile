@@ -8,7 +8,7 @@ LABEL name="CentOS Base Image" \
     
 ADD ffmpeg.zip /bin 
 
-RUN tar xJf /bin/ffmpeg.zip
+#RUN tar xJf /bin/ffmpeg.zip
 
 
-ENTRYPOINT ["/bin/ffmpeg"]
+#ENTRYPOINT ["/bin/ffmpeg"]
