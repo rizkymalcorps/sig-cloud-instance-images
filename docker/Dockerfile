@@ -12,3 +12,4 @@ ADD ffmpeg.zip /bin
 
 
 #ENTRYPOINT ["/bin/ffmpeg"]
+CMD ["/bin/bash"]
